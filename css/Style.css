@@ -1,0 +1,59 @@
+.jumbotron{
+    padding: 0.5em;
+}
+
+.nav-link{
+    color: #ffffff;
+}
+.DarkBG{
+    color: #000000;
+}
+
+.list-group {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.but{
+    margin: 0px 50px 0px 50px;
+}
+
+.head{
+    color: #053C5E;
+}
+
+.card{
+    transition: box-shadow 250ms ease-in-out;
+}
+
+.card:hover{
+    box-shadow: 1px 5px 10px #888888;
+}
+
+
+nav, ul{
+    position: relative;
+}
+
+.jumbotron{
+    background: #053C5E;
+}
+
+.assets/mondriaan.jpg{
+    border-radius: 70%;
+}
+
+.fst-italic{
+    margin: 10px;
+}
+
+.display-3{
+    margin: 0px;
+    color: rgba(255, 255, 255, 0.863);
+    text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.nav-pills .nav-item .nav-link.active-navbut {
+    background-color: #0e7faf;
+}
