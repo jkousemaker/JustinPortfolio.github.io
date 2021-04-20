@@ -1,10 +1,84 @@
-.jumbotron{
-    padding: 0.5em;
+* {
+    transition-duration: 0.8s;
 }
 
-.nav-link{
-    color: #ffffff;
+.jumbotron{
+    padding: 1em;
+    padding-bottom: 20px;
 }
+
+.card-imge {
+    border-radius: 30px;
+}
+
+.purple {
+    margin-bottom: 7px;
+}
+
+.buttons, .buttons-active {
+    border-radius: 14px;
+    cursor: pointer;
+    border: none;
+    padding: 8px 14px;
+    overflow: hidden;
+    width: 1000.94px;
+    position: relative;
+    margin: 0px 50px 0px 50px;
+    text-decoration: none;
+    font-size: 20px;
+    transition-duration: 0.4s;
+}
+
+.buttons, .buttons-active{
+    transition: box-shadow 250ms ease-in-out;
+}
+
+.buttons {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.548);
+}
+
+.buttons:hover {
+    background-color: #0e7faf;
+    box-shadow: 1px 1px 5px #888888;
+    color: white;
+}
+
+.buttons-active {
+    color: white;
+    background-color: #0e7faf;
+}
+
+.buttons-active:hover {
+    color: rgba(255, 255, 255, 0.548);
+    box-shadow: 1px 5px 10px #888888;
+}
+.bio {
+    width: 600px;
+    color: rgb(177, 177, 177);
+    font-size: 1.5rem;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 300;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.bio-theme-switcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.nav {
+    margin: 10px;
+}
+
+
+
 .DarkBG{
     color: #000000;
 }
@@ -19,21 +93,59 @@
     margin: 0px 50px 0px 50px;
 }
 
+.points{
+    text-align: center;
+    transition: all 1s;
+}
+
+.points.update {
+    opacity:0;
+}
+
 .head{
     color: #053C5E;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    margin-left: 1px;
 }
 
-.card{
+.cardd {
+    margin-bottom: 10px;
+    border-radius: 30px;
+}
+
+.cardd, .carddd{
     transition: box-shadow 250ms ease-in-out;
-}
-
-.card:hover{
-    box-shadow: 1px 5px 10px #888888;
-}
-
-
-nav, ul{
     position: relative;
+    display: flex;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1.5px solid rgba(0,0,0,.125);
+}
+
+.card-body {
+    border-radius: 30px;
+}
+
+.cardd-body {
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.carddd:hover, .cardd:hover{
+    box-shadow: 1px 5px 10px #88888880;
+}
+
+.card-gambling{
+    margin: auto;
+    width: 50%;
+    height: 30rem;
+    padding: 10px;
 }
 
 .jumbotron{
@@ -48,12 +160,76 @@ nav, ul{
     margin: 10px;
 }
 
-.display-3{
+.display-name{
     margin: 0px;
     color: rgba(255, 255, 255, 0.863);
+    font-family: 'Inter', sans-serif;
+    max-height: 45px;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.2;
     text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .nav-pills .nav-item .nav-link.active-navbut {
     background-color: #0e7faf;
+}
+
+.sun-moon {
+    position: absolute;
+    height: 100%;
+    width: 50px;
+    max-width: 100%;
+    left: 0px;
+    transition-duration: 0.75s;
+}
+
+.sun-moon.themer {
+    transform: rotate(180deg);
+}
+
+.switcher {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    right: 1%;
+    width: 120px;
+    height: 50px;
+}
+
+.bagus-img, .code-img, .mondriaan-img {
+    padding: .25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    width: 100%;
+    height: auto;
+    transition: transform 1000ms;
+}
+
+.code-img:hover, .mondriaan-img:hover {
+    position: relative;
+    transform: scale(1.5);
+}
+
+.bagus-img:hover {
+    position: relative;
+    transform: scale(1.3);
+}
+
+.list-group-flush>.list-items {
+    border-width: 0 0 1px;
+}
+
+.list-items {
+    display: block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.bagus-img.img-dark-mode, .code-img.img-dark-mode, .mondriaan-img.img-dark-mode {
+
 }
