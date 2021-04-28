@@ -13,7 +13,7 @@
     border-radius: 30px;
 }
 
-.card-info.themer {
+.card-info + .themer {
     background: linear-gradient(to right, #12c2e95b, #c471ed, #f64f5a52);
 }
 
