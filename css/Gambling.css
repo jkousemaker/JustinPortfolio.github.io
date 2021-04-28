@@ -6,6 +6,7 @@
 .game {
     display: flex;
     margin-top: 4%;
+    justify-content: center;
 }
 
 .card1 {
@@ -46,7 +47,7 @@
 .card3 {
     width: 100%;
     text-align: center;
-
+    margin: auto;
     background-color: white;
     border-radius:  40px;
     padding-right: 27px;
@@ -62,13 +63,17 @@
     display: grid;
 }
 
+.lose-win {
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .winner, .loser {
     position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    font-size: 60px;
+    font-size: 55px;
     font-family: 'Pacifico', cursive;
     letter-spacing: 6px;
     text-decoration: underline;
@@ -76,7 +81,7 @@
     text-shadow: 2px 2px 5px #15b9ff;
     transition: opacity 250ms ease-in-out;
     opacity: 0;
-    margin-bottom: 60px;
+
 }
 
 .winner {

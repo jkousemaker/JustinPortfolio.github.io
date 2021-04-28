@@ -28,13 +28,6 @@ percentageSlider.oninput = function(){
     }
 }
 
-function Higher(){
-    percentageSlider.classList.add("higher");
-}
-
-function Lower(){
-    percentageSlider.classList.remove("higher");
-}
 
 let balance = 1000;
 let oldBalance = 0;
