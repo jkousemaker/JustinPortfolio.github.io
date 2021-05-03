@@ -2,10 +2,13 @@
 const button = document.querySelector('.theme-switcher')
 const thumbnailPics = document.querySelectorAll('.bagus-img, .code-img, .mondriaan-image')
 const themeButton = document.querySelector('.theme-switcher')
+const localTime = new Date();
+const localHour = localTime.getHours();
+
 let darkMode = false;
 
 const swapTheme = function(){
-    const elements = document.querySelectorAll('.card-info, .list-items, .sun-moon, .card1, .card2, .card3, .carddd, .cardd-body, .btn-switch.themer, .points, .question, .points, .card1, .buttons-active, .card:hover, .active-navbut, .purple, .display-3, .list-group, .white, .card, body, .card-body, .list-group-item, .head, .jumbotron, .list-group-item, .white')
+    const elements = document.querySelectorAll('.work-header, .card-info, .list-items, .sun-moon, .card1, .card2, .card3, .carddd, .cardd-body, .btn-switch.themer, .points, .question, .points, .card1, .buttons-active, .card:hover, .active-navbut, .purple, .display-3, .list-group, .white, .card, body, .card-body, .list-group-item, .head, .jumbotron, .list-group-item, .white')
 
     for (let i = 0; i < elements.length; i++){
         elements[i].classList.toggle("themer")
@@ -14,7 +17,6 @@ const swapTheme = function(){
         thumbnailPics[k].classList.toggle("img-dark-mode")
     }
     
-
     if (darkMode){
         darkMode = false;
         localStorage.setItem("darkMode", darkMode);
@@ -33,7 +35,9 @@ themeButton.addEventListener('click', swapTheme)
 
 const localTheme = localStorage.getItem("darkMode")
 
-if (localTheme == "true"){
+console.log("Local hour : " + localHour);
+
+if (localTheme == "true" || localTime >= 21 || localHour <= 7 ){
     swapTheme();
     document.querySelector('.themeswitch').checked = true;
 }
